@@ -13,6 +13,7 @@ class Controller{
     }
 
     public function index(){
+        $usuarios = Usuario::consultarTodos();
         require_once $this->view;
     }
 
@@ -21,4 +22,7 @@ class Controller{
         
         $nuevoUsuario->insertar();
     }
+
+
+    
 }
