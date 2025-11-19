@@ -1,6 +1,6 @@
 <?php
-
-require_once "controller.php";
+//PascalCase
+require_once "controllers/UsuarioController.php";
 
 $controller = new Controller;
 

@@ -5,8 +5,8 @@ class Controller{
     public $view;
 
     public function __construct(){
-        $this->model = "usuario.php";
-        $this->view = "view.php";
+        $this->model = "models/Usuario.php";
+        $this->view = "views/usuario/lista.php";
         require_once $this->model;
 
         $conexion =  Usuario::connect();
